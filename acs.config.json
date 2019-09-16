@@ -1,0 +1,41 @@
+{
+    "name": "ACSotron",
+    "tokenEnv": "ACSBOTTOKEN",
+    "prefix": ".",
+    "commands": {
+        "lfg": "siegebot-lfg"
+    },
+    "triggers":
+    {
+        "create": {
+            "command": "lfg",
+            "subcommand": "create",
+            "config": {},
+            "description": "Create a LFG group!```Example:\nCreate an Overwatch group for 6 people\n.create Overwatch | 2020-10-21 15:00 | 6\n\nCreate an FFXIV group for unlimited people\n.create Overwatch | 2020-10-21 15:00```"
+        },
+        "delete": {
+            "command": "lfg",
+            "subcommand": "remove",
+            "config": {},
+            "description": "Delete a LFG group that you created!```Example:\n.delete g6HY```"
+        },
+        "join": {
+            "command": "lfg",
+            "subcommand": "join",
+            "config": {},
+            "description": "Join an existing LFG group!```Example:\n.join g6HY```"
+        },
+        "leave": {
+            "command": "lfg",
+            "subcommand": "leave",
+            "config": {},
+            "description": "Leave an LFG group that you joined!```Example:\n.leave g6HY```"
+        },
+        "list": {
+            "command": "lfg",
+            "subcommand": "list",
+            "config": {},
+            "description": "List existing groups!"
+        }
+    }
+}
